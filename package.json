@@ -4,7 +4,7 @@
   "licence": "MIT",
   "version": "1.8.0",
   "private": false,
-  "homepage": "https://dwaynimay.github.io/backup-v6",
+  "homepage": "https://dwaynimay.github.io/cctubes",
   "scripts": {
     "pradeploy": "npm run build",
     "deploy": "gh-pages -d build",
