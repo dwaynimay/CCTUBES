@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react';
 import { Outlet, useRoutes } from 'react-router-dom';
 
-import pajak from "src/pages/pajak"
-import apbn from "src/pages/apbn"
+import Page1 from "src/pages/page1"
+import Page2 from "src/pages/page2"
 import DashboardLayout from 'src/layouts/dashboard';
 
 
@@ -22,8 +22,8 @@ export default function Router() {
       ),
       children: [
         { element: <IndexPage />, index: true },
-        { path: '/pajak', element: <pajak /> },
-        { path: '/apbn', element: <apbn /> },
+        { path: '/page1', element: <Page1 /> },
+        { path: '/page2', element: <Page2 /> },
       ],
     },
     

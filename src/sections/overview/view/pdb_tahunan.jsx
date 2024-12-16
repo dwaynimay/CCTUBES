@@ -19,7 +19,6 @@ export default function AppView() {
           id: index + 1,
           pdb: doc.pdb || 0,
           tahun: doc.thn || 0,
-          prediksi: doc.pre || 0,
         }));
   
         const sortedData = mappedData.sort((a, b) => a.tahun - b.tahun);
@@ -33,7 +32,6 @@ export default function AppView() {
   }, []);
 
   const pdb = users.map(user => user.pdb);
-  const pred = users.map(user => user.prediksi);
   const labels = users.map(user => user.tahun);
 
   return (
